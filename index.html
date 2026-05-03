@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main-content.css" />
+    <link rel="stylesheet" href="./css/auth-popup.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div>
+        <img
+          src="./assets/logo.png"
+          alt="logo"
+          class="logo"
+          width="173"
+          height="35"
+        />
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Giới thiệu</a></li>
+          <li class="nav-item"><a href="#">Luyện tập</a></li>
+          <li class="nav-item"><a href="#">Flashcards</a></li>
+          <li class="nav-item"><a href="#">Blog</a></li>
+        </ul>
+        <button id="btnLogin" class="btn btn-primary">Đăng nhập</button>
+      </nav>
+    </header>
+    <!-- MAIN-CONTENT -->
+    <section id="main-content">
+      <div class="learning-content">
+        <div class="menu">
+          <div class="sidebar-filter">
+            <img
+              src="./assets/icons/filter.svg"
+              alt="filter"
+              width="24"
+              height="24"
+            />
+            <div class="container">
+              <div class="card active">
+                <div class="card-header">
+                  <i class="fa-solid fa-book-open icon-reading"></i>
+                  <span class="span-header">Reading</span>
+                </div>
+                <div class="card-body">
+                  <label class="radio-item">
+                    <input type="radio" name="reading" checked />
+                    <span class="checkmark"></span>
+                    Passage 1
+                  </label>
+                  <label class="radio-item">
+                    <input type="radio" name="reading" />
+                    <span class="checkmark"></span>
+                    Passage 2
+                  </label>
+                  <label class="radio-item">
+                    <input type="radio" name="reading" />
+                    <span class="checkmark"></span>
+                    Passage 3
+                  </label>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <i class="fa-solid fa-headphones icon-listening"></i>
+                  <span class="span-header">Listening</span>
+                </div>
+                <div class="card-body">
+                  <label class="radio-item">
+                    <input type="radio" name="listening" />
+                    <span class="checkmark"></span>
+                    Bài lẻ
+                  </label>
+                  <label class="radio-item">
+                    <input type="radio" name="listening" />
+                    <span class="checkmark"></span>
+                    Full đề
+                  </label>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <i class="fa-solid fa-pen-nib icon-writing"></i>
+                  <span class="span-header">Writing</span>
+                </div>
+                <div class="card-body">
+                  <label class="radio-item">
+                    <input type="radio" name="writing" />
+                    <span class="checkmark"></span>
+                    Bài lẻ
+                  </label>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <i class="fa-solid fa-microphone-lines icon-speaking"></i>
+                  <span class="span-header">Speaking</span>
+                </div>
+                <div class="card-body">
+                  <label class="radio-item">
+                    <input type="radio" name="speaking" />
+                    <span class="checkmark"></span>
+                    Bài lẻ
+                  </label>
+                  <label class="radio-item">
+                    <input type="radio" name="speaking" />
+                    <span class="checkmark"></span>
+                    Full đề
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- <i class="fa-solid fa-angle-left"></i> -->
+          </div>
+          <div class="list-category">
+            <div class="tab-search">
+              <div class="left-group">
+                <div class="tab-content">
+                  <p class="tab-item">Bài chưa làm</p>
+                  <p class="tab-item">Bài đã làm</p>
+                </div>
+              </div>
+              <div class="search-wrapper">
+                <img
+                  src="./assets/icons/magnify.svg"
+                  alt="magnify"
+                  width="19"
+                  height="19"
+                />
+                <input type="text" placeholder="Tìm theo tên bài tập" />
+                <button class="btn-search">Tìm kiếm</button>
+              </div>
+            </div>
+            <div class="list-lesson">
+              <div class="card-lesson">
+                <div class="wrap-thumbnail">
+                  <p class="count">
+                    <i class="fa-solid fa-square-pen"></i>
+                    <span>1000 luot lam bai</span>
+                  </p>
+                  <img src="./assets/cardthumb.jfif" alt="" />
+                  <p class="passage">Passage 2</p>
+                </div>
+                <div class="wrap-content">
+                  <p class="title">
+                    [Actual Test] - Should We Stop Eating Meat?
+                  </p>
+                  <ul>
+                    <li class="item">Gap Filling</li>
+                    <li class="item">Matching Information</li>
+                    <li class="item">Matching Features</li>
+                  </ul>
+                </div>
+                <div class="overlay-content">
+                  <p class="title">
+                    [YouPass Collect] - The last man who knew everything ?????
+                  </p>
+                  <ul>
+                    <li class="item">Gap Filling</li>
+                    <li class="item">Matching Information</li>
+                    <li class="item">Matching Features</li>
+                  </ul>
+                  <button
+                    id="handleOpenPopup"
+                    class="btn btn-secound btn-size-medium"
+                  >
+                    Làm bài
+                  </button>
+                </div>
+              </div>
+              <!-- CARD 2 -->
+              <div class="card-lesson">
+                <div class="wrap-thumbnail">
+                  <p class="count">
+                    <i class="fa-solid fa-square-pen"></i>
+                    <span>950 lượt làm bài</span>
+                  </p>
+                  <img src="./assets/cardthumb.jfif" alt="" />
+                  <p class="passage">Passage 2</p>
+                </div>
+                <div class="wrap-content">
+                  <p class="title">
+                    [Actual Test] - Climate Change and Its Effects
+                  </p>
+                  <ul>
+                    <li class="item">Matching Information</li>
+                    <li class="item">Gap Filling</li>
+                    <li class="item">Multiple Choice</li>
+                  </ul>
+                </div>
+                <div class="overlay-content">
+                  <p class="title">[YouPass Collect] - Global Warming Crisis</p>
+                  <ul>
+                    <li class="item">Matching Features</li>
+                    <li class="item">Summary Completion</li>
+                    <li class="item">Yes/No/Not Given</li>
+                  </ul>
+                  <button class="btn btn-secound btn-size-medium">
+                    Làm bài
+                  </button>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="card-lesson">
+                <div class="wrap-thumbnail">
+                  <p class="count">
+                    <i class="fa-solid fa-square-pen"></i>
+                    <span>1500 lượt làm bài</span>
+                  </p>
+                  <img src="./assets/cardthumb.jfif" alt="" />
+                  <p class="passage">Passage 3</p>
+                </div>
+                <div class="wrap-content">
+                  <p class="title">
+                    [Actual Test] - Space Exploration in the 21st Century
+                  </p>
+                  <ul>
+                    <li class="item">Multiple Choice</li>
+                    <li class="item">Matching Headings</li>
+                    <li class="item">Gap Filling</li>
+                  </ul>
+                </div>
+                <div class="overlay-content">
+                  <p class="title">[YouPass Collect] - Journey to Mars</p>
+                  <ul>
+                    <li class="item">Sentence Completion</li>
+                    <li class="item">Matching Information</li>
+                    <li class="item">True/False/Not Given</li>
+                  </ul>
+                  <button class="btn btn-secound btn-size-medium">
+                    Làm bài
+                  </button>
+                </div>
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="card-lesson">
+                <div class="wrap-thumbnail">
+                  <p class="count">
+                    <i class="fa-solid fa-square-pen"></i>
+                    <span>780 lượt làm bài</span>
+                  </p>
+                  <img src="./assets/cardthumb.jfif" alt="" />
+                  <p class="passage">Passage 4</p>
+                </div>
+                <div class="wrap-content">
+                  <p class="title">[Actual Test] - The History of Technology</p>
+                  <ul>
+                    <li class="item">Matching Features</li>
+                    <li class="item">Gap Filling</li>
+                    <li class="item">Multiple Choice</li>
+                  </ul>
+                </div>
+                <div class="overlay-content">
+                  <p class="title">
+                    [YouPass Collect] - Evolution of Modern Devices
+                  </p>
+                  <ul>
+                    <li class="item">Matching Headings</li>
+                    <li class="item">Sentence Completion</li>
+                    <li class="item">Yes/No/Not Given</li>
+                  </ul>
+                  <button class="btn btn-secound btn-size-medium">
+                    Làm bài
+                  </button>
+                </div>
+              </div>
+
+              <!-- CARD 5 -->
+              <div class="card-lesson">
+                <div class="wrap-thumbnail">
+                  <p class="count">
+                    <i class="fa-solid fa-square-pen"></i>
+                    <span>620 lượt làm bài</span>
+                  </p>
+                  <img src="./assets/cardthumb.jfif" alt="" />
+                  <p class="passage">Passage 5</p>
+                </div>
+                <div class="wrap-content">
+                  <p class="title">
+                    [Actual Test] - Healthy Lifestyle and Diet
+                  </p>
+                  <ul>
+                    <li class="item">Gap Filling</li>
+                    <li class="item">Matching Information</li>
+                    <li class="item">True/False/Not Given</li>
+                  </ul>
+                </div>
+                <div class="overlay-content">
+                  <p class="title">
+                    [YouPass Collect] - Nutrition and Well-being
+                  </p>
+                  <ul>
+                    <li class="item">Summary Completion</li>
+                    <li class="item">Matching Features</li>
+                    <li class="item">Multiple Choice</li>
+                  </ul>
+                  <button class="btn btn-secound btn-size-medium">
+                    Làm bài
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="overlay-popup"></div>
+    <div id="popup-youPass-collect">
+      <div class="popup-header">
+        <p class="popup-heading">[YouPass Collect] - Game Theory</p>
+        <img
+          id="closeBtn"
+          src="assets/icons/circle_x.svg"
+          style="cursor: pointer"
+          alt=""
+        />
+      </div>
+      <p class="popup-title">Chọn giao diện làm bài</p>
+      <div class="popup-body">
+        <div class="popup-card" id="cardRealTest" style="cursor:pointer">
+          <img
+            src="assets/real_test_ui.svg"
+            style="border: rgb(36 36 36) 4px solid; border-radius: 0.5rem"
+            alt=""
+          />
+          <p class="popup-card-title">Giao diện như Thi thật</p>
+          <p class="popup-card-description">
+            Mô phỏng 100% giao diện thi máy, giúp các bạn quen với chức năng khi
+            thi thật
+          </p>
+        </div>
+        <div class="popup-card" id="cardPractice" style="cursor:pointer">
+          <img
+            src="assets/practice_ui.svg"
+            style="border: rgb(36 36 36) 4px solid; border-radius: 0.5rem"
+            alt=""
+          />
+          <p class="popup-card-title">Giao diện Luyện tập</p>
+          <p class="popup-card-description">
+            Hỗ trợ tối đa các chức năng: Tra từ vựng, gợi ý viết bài,... Phù hợp
+            để luyện tập
+          </p>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <button id="btnStartExam" class="btn btn-secound btn-size-medium">Bắt đầu làm bài</button>
+      </div>
+    </div>
+
+    <!-- AUTH POPUP (Login / Register) -->
+    <div class="auth-overlay" id="authOverlay"></div>
+    <div class="auth-popup" id="authPopup">
+      <!-- Header -->
+      <div class="auth-popup__header">
+        <button class="auth-popup__header-btn auth-popup__header-btn--back" id="authBackBtn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <h2 class="auth-popup__header-title" id="authTitle">Đăng nhập</h2>
+        <button class="auth-popup__header-btn" id="authCloseBtn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Login Form -->
+      <div class="auth-popup__body">
+        <form class="auth-form active" id="loginForm" autocomplete="off">
+          <!-- Email -->
+          <div class="auth-form-group">
+            <div class="auth-form-group__label">
+              <span class="auth-form-group__label-text">Email / Username</span>
+            </div>
+            <div class="auth-input-wrapper">
+              <input
+                type="text"
+                id="loginEmail"
+                placeholder="Nhập email/tên đăng nhập của bạn"
+              />
+            </div>
+            <div class="auth-form-group__error" id="loginEmailError">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>Vui lòng nhập email hoặc tên đăng nhập</span>
+            </div>
+          </div>
+
+          <!-- Password -->
+          <div class="auth-form-group">
+            <div class="auth-form-group__label">
+              <span class="auth-form-group__label-text">Mật khẩu</span>
+              <a href="#" class="auth-form-group__label-link">Quên mật khẩu?</a>
+            </div>
+            <div class="auth-input-wrapper">
+              <input
+                type="password"
+                id="loginPassword"
+                placeholder="Nhập mật khẩu"
+              />
+              <button type="button" class="auth-input-wrapper__toggle" data-target="loginPassword">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+            <div class="auth-form-group__error" id="loginPasswordError">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>Vui lòng nhập mật khẩu</span>
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="auth-submit-btn">Đăng nhập</button>
+
+          <!-- Divider -->
+          <div class="auth-divider">
+            <span class="auth-divider__line"></span>
+            <span class="auth-divider__text">Các tùy chọn đăng nhập khác</span>
+            <span class="auth-divider__line"></span>
+          </div>
+
+          <!-- Social -->
+          <div class="auth-social">
+            <button type="button" class="auth-social__btn auth-social__btn--google">
+              <i class="fa-brands fa-google"></i>
+            </button>
+            <button type="button" class="auth-social__btn auth-social__btn--facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <button type="button" class="auth-social__btn auth-social__btn--apple">
+              <i class="fa-brands fa-apple"></i>
+            </button>
+          </div>
+        </form>
+
+        <!-- Register Form -->
+        <form class="auth-form" id="registerForm" autocomplete="off">
+          <!-- Full Name -->
+          <div class="auth-form-group">
+            <div class="auth-form-group__label">
+              <span class="auth-form-group__label-text">Họ và tên</span>
+            </div>
+            <div class="auth-input-wrapper">
+              <input
+                type="text"
+                id="registerName"
+                placeholder="Nhập họ và tên của bạn"
+              />
+            </div>
+            <div class="auth-form-group__error" id="registerNameError">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>Vui lòng nhập họ và tên</span>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="auth-form-group">
+            <div class="auth-form-group__label">
+              <span class="auth-form-group__label-text">Email</span>
+            </div>
+            <div class="auth-input-wrapper">
+              <input
+                type="email"
+                id="registerEmail"
+                placeholder="Nhập email của bạn"
+              />
+            </div>
+            <div class="auth-form-group__error" id="registerEmailError">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>Vui lòng nhập email hợp lệ</span>
+            </div>
+          </div>
+
+          <!-- Password -->
+          <div class="auth-form-group">
+            <div class="auth-form-group__label">
+              <span class="auth-form-group__label-text">Mật khẩu</span>
+            </div>
+            <div class="auth-input-wrapper">
+              <input
+                type="password"
+                id="registerPassword"
+                placeholder="Nhập mật khẩu (tối thiểu 6 ký tự)"
+              />
+              <button type="button" class="auth-input-wrapper__toggle" data-target="registerPassword">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+            <div class="auth-password-strength" id="passwordStrength">
+              <div class="auth-password-strength__bar"></div>
+              <div class="auth-password-strength__bar"></div>
+              <div class="auth-password-strength__bar"></div>
+              <div class="auth-password-strength__bar"></div>
+            </div>
+            <div class="auth-form-group__error" id="registerPasswordError">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>Mật khẩu phải có tối thiểu 6 ký tự</span>
+            </div>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="auth-form-group">
+            <div class="auth-form-group__label">
+              <span class="auth-form-group__label-text">Xác nhận mật khẩu</span>
+            </div>
+            <div class="auth-input-wrapper">
+              <input
+                type="password"
+                id="registerConfirmPassword"
+                placeholder="Nhập lại mật khẩu"
+              />
+              <button type="button" class="auth-input-wrapper__toggle" data-target="registerConfirmPassword">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+            <div class="auth-form-group__error" id="registerConfirmError">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <span>Mật khẩu không khớp</span>
+            </div>
+          </div>
+
+          <!-- Terms -->
+          <div class="auth-checkbox">
+            <input type="checkbox" id="agreeTerms" />
+            <label class="auth-checkbox__text" for="agreeTerms">
+              Tôi đồng ý với
+              <a href="#" class="auth-checkbox__link">Điều khoản sử dụng</a>
+              và
+              <a href="#" class="auth-checkbox__link">Chính sách bảo mật</a>
+            </label>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="auth-submit-btn">Đăng ký</button>
+
+          <!-- Divider -->
+          <div class="auth-divider">
+            <span class="auth-divider__line"></span>
+            <span class="auth-divider__text">Hoặc đăng ký với</span>
+            <span class="auth-divider__line"></span>
+          </div>
+
+          <!-- Social -->
+          <div class="auth-social">
+            <button type="button" class="auth-social__btn auth-social__btn--google">
+              <i class="fa-brands fa-google"></i>
+            </button>
+            <button type="button" class="auth-social__btn auth-social__btn--facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <button type="button" class="auth-social__btn auth-social__btn--apple">
+              <i class="fa-brands fa-apple"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <div class="auth-popup__footer">
+        <p class="auth-popup__footer-text" id="authFooterText">
+          Chưa có tài khoản?
+          <span class="auth-popup__footer-link" id="switchToRegister">Đăng ký ngay</span>
+        </p>
+      </div>
+    </div>
+
+  </body>
+  <script src="./js/main.js"></script>
+</html>

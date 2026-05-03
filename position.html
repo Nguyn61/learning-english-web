@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 200vh;
+        gap: 20px;
+        background-color: orangered;
+      }
+      .box {
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(95, 164, 247);
+      }
+      .box-relative {
+        top: 30px;
+        left: 100px;
+      }
+      .box-absolute {
+        position: fixed;
+        top: 0;
+        left: 0;
+        border: 1px solid black;
+        width: 50px;
+        height: 50px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p>1</p>
+      </div>
+      <div class="box box-relative">
+        <p>2</p>
+        <div class="box-absolute">ABS</div>
+      </div>
+      <div class="box">
+        <p>3</p>
+      </div>
+    </div>
+  </body>
+</html>

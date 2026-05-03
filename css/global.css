@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --color-primary: #4caf84; /* xanh lá chính */
+  --color-primary-light: #e8f5ee;
+  --color-primary-dark: #3b8f6c;
+
+  /* Secondary (accent) */
+  --color-accent: #ff6d3a; /* cam highlight */
+  --color-accent-light: #fff3e6;
+
+  /* Background */
+  --color-bg-main: #f5f7f9;
+  --color-bg-card: #ffffff;
+  --color-bg-sidebar: #f0f2f5;
+
+  /* Text */
+  --color-text-primary: #1f2937; /* gần black */
+  --color-text-secondary: #6b7280; /* gray */
+  --color-text-muted: #9ca3af;
+
+  /* Border */
+  --color-border: #e5e7eb;
+  --color-divider: #d1d5db;
+
+  /* Status */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* Tag / badge */
+  --color-tag-purple: #8b5cf6;
+  --color-tag-blue: #3b82f6;
+  --color-tag-orange: #fb923c;
+
+  /* Shadow */
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+p,
+li {
+  font-size: 14px;
+}
+
+span {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+.btn {
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-secound {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.btn-size-medium {
+  padding: 12px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 15px;
+}

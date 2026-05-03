@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luyện tập - New Economy TOEIC Test 1</title>
+    <meta
+      name="description"
+      content="Luyện tập TOEIC Part 5 với giao diện trực quan, kiểm tra đáp án và giải thích chi tiết."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/exam.css" />
+  </head>
+  <body>
+    <div class="exam-page">
+      <!-- Top Bar -->
+      <div class="exam-topbar">
+        <h1 class="exam-topbar__title" id="examTitle">
+          New Economy TOEIC Test 1
+        </h1>
+        <button class="exam-topbar__exit" id="examExitBtn">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i> Thoát
+        </button>
+      </div>
+
+      <!-- Main Layout -->
+      <div class="exam-layout">
+        <!-- Content Area -->
+        <div class="exam-content">
+          <!-- Part Label -->
+          <div class="exam-part-label" id="examPartLabel">Part 5</div>
+
+          <!-- Questions Container -->
+          <div id="examQuestions"></div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="exam-sidebar">
+          <!-- Timer -->
+          <div class="exam-timer">
+            <p class="exam-timer__label">Thời gian làm bài</p>
+            <p class="exam-timer__time" id="examTimer">40:00</p>
+          </div>
+
+          <!-- Submit Button -->
+          <button class="exam-submit-btn" id="examSubmitBtn">
+            NỘP BÀI (0/30)
+          </button>
+
+          <!-- Hints -->
+          <p class="exam-sidebar__hint">
+            <i class="fa-solid fa-rotate-right"></i>
+            Khôi phục/lưu bài làm
+          </p>
+
+          <p class="exam-sidebar__note">
+            Chú ý: bạn có thể click vào số thứ tự câu hỏi trong bài để đánh dấu
+            review
+          </p>
+
+          <!-- Question Navigation -->
+          <div class="exam-nav">
+            <p class="exam-nav__title" id="examNavTitle">Part 5</p>
+            <div class="exam-nav__grid" id="examNavGrid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Confirm Submit Popup -->
+    <div class="exam-confirm-overlay" id="examConfirmOverlay">
+      <div class="exam-confirm-modal">
+        <div class="exam-confirm__icon">
+          <i class="fa-solid fa-circle-exclamation"></i>
+        </div>
+        <h3 class="exam-confirm__title">Xác nhận nộp bài</h3>
+        <p class="exam-confirm__message" id="examConfirmMessage">
+          Bạn còn 0 câu chưa trả lời. Bạn có muốn nộp bài?
+        </p>
+        <div class="exam-confirm__actions">
+          <button
+            class="exam-confirm__btn exam-confirm__btn--cancel"
+            id="examConfirmCancel"
+          >
+            <i class="fa-solid fa-pencil"></i> Tiếp tục làm bài
+          </button>
+          <button
+            class="exam-confirm__btn exam-confirm__btn--submit"
+            id="examConfirmSubmit"
+          >
+            <i class="fa-solid fa-paper-plane"></i> Nộp bài
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Score Result Modal -->
+    <div class="exam-result-overlay" id="examResultOverlay">
+      <div class="exam-result-modal">
+        <div class="exam-result__icon">🎉</div>
+        <h2 class="exam-result__title">Kết quả</h2>
+        <p class="exam-result__score">0/30</p>
+        <p class="exam-result__detail">Bạn đã trả lời đúng 0 trên 30 câu</p>
+
+        <div class="exam-result__stats">
+          <div class="exam-result__stat">
+            <span class="exam-result__stat-value correct">0</span>
+            <span class="exam-result__stat-label">Đúng</span>
+          </div>
+          <div class="exam-result__stat">
+            <span class="exam-result__stat-value incorrect">0</span>
+            <span class="exam-result__stat-label">Sai</span>
+          </div>
+          <div class="exam-result__stat">
+            <span class="exam-result__stat-value skipped">0</span>
+            <span class="exam-result__stat-label">Bỏ qua</span>
+          </div>
+        </div>
+
+        <div class="exam-result__actions">
+          <button class="exam-result__btn exam-result__btn--review">
+            <i class="fa-solid fa-eye"></i> Xem lại bài
+          </button>
+          <button class="exam-result__btn exam-result__btn--home">
+            <i class="fa-solid fa-house"></i> Về trang chủ
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/exam.js"></script>
+  </body>
+</html>

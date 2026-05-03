@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: var(--shadow-card);
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 16px;
+}
+
+.nav-list a:hover {
+  color: var(--color-primary);
+}
