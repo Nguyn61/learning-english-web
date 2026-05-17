@@ -391,7 +391,7 @@
         />
       </div>
       <div class="auth-popup_body">
-        <!-- <form id="loginForm" class="auth-form active">
+        <form id="loginForm" class="auth-form active">
           <div class="auth-form-group">
             <div class="group-label">
               <label for="">Email / Username</label>
@@ -452,9 +452,9 @@
                 <i class="fa-brands fa-apple"></i>
               </button>
             </div>
-          </div> -->
+          </div>
         </form>
-          <form class="auth-form active" id="registerForm">
+          <form class="auth-form" id="registerForm">
           <!-- Full Name -->
           <div class="auth-form-group">
             <div class="group-label">
@@ -480,7 +480,7 @@
             </div>
             <div class="auth-input-wrapper">
               <input
-                type="email"
+                type="text"
                 id="registerEmail"
                 placeholder="Nhập email của bạn"
               />
@@ -574,10 +574,13 @@
           </div>
 
       </div>
-      <div class="auth-popup_footer">
-        <p class="auth-popup_footer-text" id="authFooterText">
+      <!-- Footer -->
+      <div class="auth-popup__footer">
+        <p class="auth-popup__footer-text" id="authFooterText">
           Chưa có tài khoản?
-          <span class="link" id="switchToRegister">Đăng ký ngay</span>
+          <span class="auth-popup__footer-link" id="switchToRegister"
+            >Đăng ký ngay</span
+          >
         </p>
       </div>
     </div>
@@ -611,4 +614,5 @@
       overlayBg.style.display = "none";
     });
   </script>
+  <script src="js/main.js"></script>
 </html>

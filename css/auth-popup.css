@@ -13,6 +13,7 @@
   overflow-y: auto;
 }
 
+
 .log-in-popup-card {
   position: relative;
   padding: 24px 24px 24px 24px;
@@ -21,6 +22,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+#authBackBtn {
+  visibility: hidden;
+}
+
+#authBackBtn.visible {
+  visibility: visible;
 }
 
 .auth-popup_header {
@@ -62,6 +71,14 @@
 
 .auth-form-group {
   margin-bottom: 18px;
+}
+
+.auth-form {
+  display: none; 
+}
+
+.auth-form.active {
+  display: block;
 }
 
 .group-lable {
@@ -185,24 +202,24 @@
   box-shadow: 0 4px 12px rgba(76, 175, 132, 0.15);
 }
 
-.auth-popup_footer {
+.auth-popup__footer {
   text-align: center;
   padding: 0 24px 24px;
 }
 
-.auth-popup_footer-text {
+.auth-popup__footer-text {
   font-size: 14px;
   color: var(--color-text-secondary);
 }
 
-.auth-popup_footer-link {
+.auth-popup__footer-link {
   color: var(--color-primary);
   font-weight: 700;
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
-.auth-popup_footer-link:hover {
+.auth-popup__footer-link:hover {
   color: var(--color-primary-dark);
   text-decoration: underline;
 }
